@@ -27,9 +27,9 @@ def export_d1_to_csv_and_email():
     resend.api_key = os.environ["RESEND_API_KEY"]
     
     # Define your specific table and sender address
-    table_name = "your_table_name"
+    table_name = "your_table"
     sender_email = "onboarding@resend.dev" # Replace with your verified Resend domain
-    target_email = "namelessonbandlab@outlook.com"
+    target_email = "youremail@example.com"
 
     # 3. Query Cloudflare D1 via the REST API
     url = f"https://api.cloudflare.com/client/v4/accounts/{cf_account_id}/d1/database/{cf_db_id}/query"
